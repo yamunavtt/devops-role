@@ -1,31 +1,22 @@
-Groovy: **def and variables**
+**Groovy: ** **def and variables**
 
-Concept:
+**Concept:**
 def declares a variable without specifying the type explicitly.
 
-Example:
+**Example:**
 def name = "Jenkins"
 
-Runtime type:
+**Runtime type:**
 println name.class
 → java.lang.String
 
-Explicit equivalent:
+**Explicit equivalent:**
 String name = "Jenkins"
 
-Jenkins example:
+**Jenkins example:**
 def buildResult = currentBuild.result
-currentBuild
-→ Jenkins global object representing the current Pipeline build
 
-currentBuild.result
-→ Overall build result
-→ SUCCESS / FAILURE / UNSTABLE / ABORTED / null
-
-Example:
-def result = currentBuild.result ?: 'SUCCESS'
-
-Important:
+**Important:**
 def does not mean "no type".
 
 Exercise:
